@@ -186,7 +186,7 @@
         background-color: #76cdd7;
     }
     #contact_subject {
-        background: url(/img/email-icon.png) 99% 85% no-repeat;
+        background: url(../img/email-icon.png) 99% 50% no-repeat;
         background-size: 30px 30px;
     }
     #contact_message {
