@@ -54,7 +54,8 @@
 }
 
 @media screen {
-    .tm-nav-item:hover {
+    .tm-nav-item:hover,
+    .tm-nav-item a:hover {
         color: #fff;
         background-color: lightskyblue;
     }
@@ -202,7 +203,7 @@
     }
     .submit-btn:hover {
         color: #fff;
-        background-color: #76cdd7;
-        border: solid 2px #76cdd7;
+        background-color: lightseagreen;
+        border: solid 2px lightseagreen;
     }
 }
