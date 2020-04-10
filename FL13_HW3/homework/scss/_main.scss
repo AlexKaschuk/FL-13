@@ -1,0 +1,277 @@
+@mixin TextStyle {
+    font-family: $cardText;
+    color: $textColorHeader;
+}
+
+@mixin textStyle {
+    font-family: $cardText;
+    color: white;
+    font-stretch: ultra-expanded;
+}
+
+@mixin myButton {
+    color: white;
+    background-color: $buttonColor;
+    padding: 15px 45px;
+    font-family: sans-serif;
+    font-size: map-get($font-sizes, "normal");
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+}
+
+@mixin links {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.logoStyle {
+    margin: auto 15px;
+    width: 45px;
+    height: 45px;
+}
+
+body {
+    background: $contentBackground;
+}
+
+.header {
+    background-image: $header-image;
+    border-bottom-right-radius: 750px 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    a {
+        @include links;
+        margin-left: 175px;
+        color: white;
+    }
+}
+
+.landing-logo {
+    display: flex;
+    margin: auto 184px;
+    text-align: center;
+    img {
+        @extend .logoStyle;
+    }
+    p {
+        color: $textColorHeader;
+        font-family: $cardText;
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 1.2;
+        span {
+            font-weight: normal;
+            font-size: 11px;
+            display: block;
+        }
+        span::before {
+            content: “\A”;
+            white-space: pre;
+        }
+    }
+}
+
+.header_heading {
+    font-family: "Source Sans Pro", sans-serif;
+    color: $textColorHeader;
+    text-align: left;
+    max-width: 700px;
+    margin: 48px 0 34px 184px;
+    font-size: map-get($font-sizes, "large");
+    font-weight: bold;
+    line-height: 0.97;
+}
+
+.header_text {
+    @include TextStyle;
+    white-space: pre;
+    font-size: 17px;
+    margin-left: 152px;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+.header_button {
+    @include myButton;
+    margin-left: 184px;
+    margin-bottom: 170px;
+}
+
+.login {
+    margin-left: 90px;
+    font-size: 20px;
+}
+
+.header_heading::after {
+    position: absolute;
+    max-width: 300px;
+    margin-left: 184px;
+    margin-top: 10px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    background: $colorSelect;
+    line-height: 0.6;
+    content: "awesome";
+}
+
+.section_text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: $textColorHeader;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 600;
+}
+
+.section_card {
+    margin: 16px auto;
+    align-items: center;
+    background-color: $backgroundCard;
+    width: 1100px;
+    @include textStyle;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .section_card_img {
+        width: 105%;
+        border-radius: 5px;
+        margin: 16px;
+    }
+}
+
+.section_text::after {
+    position: absolute;
+    text-align: center;
+    max-width: 197px;
+    margin: auto;
+    height: 45px;
+    left: 210px;
+    right: 0;
+    background: $colorSelect;
+    content: "adventure";
+}
+
+.section_card_right_container {
+    text-align: center;
+    .section_card_heading {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 24px;
+        margin: 40px auto;
+        font-weight: bold;
+    }
+    .section_card_text {
+        font-family: $cardText;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+        color: #c0c0c4;
+        text-align: justify;
+        font-size: map-get($font-sizes, "normal");
+        font-stretch: ultra-expanded;
+        word-spacing: 2px;
+    }
+    a.section_link {
+        @include links;
+        color: rgb(175, 175, 180);
+        margin: auto;
+        font-size: map-get($font-sizes, "normal");
+        font-weight: bold;
+    }
+}
+
+.section_banner {
+    background-image: linear-gradient(to left, $myGradient);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 90px auto 0;
+    width: 1190px;
+    height: 150px;
+    position: relative;
+    top: 55px;
+    z-index: 1;
+    .section_banner_text_wrap {
+        width: 50%;
+        text-align: left;
+        margin-left: 130px;
+        .section_banner_heading {
+            font-family: "Source Sans Pro", sans-serif;
+            color: $textColorHeader;
+            font-weight: bold;
+            font-size: 29px;
+            margin: 25px 35px auto;
+        }
+        .section_banner_text {
+            color: #D1D1D1;
+            margin: 15px 35px auto;
+            font-family: $cardText;
+            font-size: map-get($font-sizes, "normal");
+        }
+    }
+    button {
+        @include myButton;
+        margin: 50px auto 50px;
+        display: block;
+    }
+}
+
+.section_banner_heading::after {
+    position: absolute;
+    margin: auto;
+    height: 29px;
+    max-width: 62px;
+    left: 0;
+    right: 562px;
+    background: $colorSelect;
+    content: "start";
+}
+
+.footer {
+    background-color: $footerColor;
+    padding: 70px 0 50px 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    .footer-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_text {
+        @include textStyle;
+        max-width: 350px;
+        font-size: 14px;
+        margin-right: 220px;
+        color: #D1D1D1;
+    }
+    .footer-cr {
+        @include textStyle;
+        width: 30%;
+        text-align: center;
+        color: #D1D1D1;
+    }
+    .footer_logo {
+        text-align: left;
+        width: 20%;
+        p {
+            font-size: 27px;
+            color: #D1D1D1;
+            margin-right: 400px;
+            width: 150px;
+            span {
+                margin: auto;
+                font-weight: 600;
+                width: 55px;
+                font-stretch: ultra-condensed;
+                letter-spacing: 0.1px;
+                font-size: 11px;
+            }
+        }
+    }
+}
