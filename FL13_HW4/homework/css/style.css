@@ -50,7 +50,7 @@ body {
     height: 100vh;
     text-align: center;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/home-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/home-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #000;
@@ -103,23 +103,23 @@ body {
 }
 
 .first_block {
-    background-image: url(/img/blog-image1.jpg);
+    background-image: url(../img/blog-image1.jpg);
 }
 
 .second_block {
-    background-image: url(/img/blog-image2.jpg);
+    background-image: url(../img/blog-image2.jpg);
 }
 
 .third_block {
-    background-image: url(/img/blog-image3.jpg);
+    background-image: url(../img/blog-image3.jpg);
 }
 
 .fourth_block {
-    background-image: url(/img/blog-image4.jpg);
+    background-image: url(../img/blog-image4.jpg);
 }
 
 .fifth_block {
-    background-image: url(/img/blog-image5.jpg);
+    background-image: url(../img/blog-image5.jpg);
 }
 
 .autor {
@@ -147,11 +147,11 @@ body {
 }
 
 .Lopez::before {
-    background-image: url(/img/author-image1.jpg);
+    background-image: url(../img/author-image1.jpg);
 }
 
 .Dennis::before {
-    background-image: url(/img/author-image2.jpg);
+    background-image: url(../img/author-image2.jpg);
 }
 
 .gallery_text {
