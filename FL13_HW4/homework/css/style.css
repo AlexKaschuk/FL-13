@@ -96,30 +96,8 @@ body {
 .gallery_img {
     display: block;
     width: 100%;
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
     margin-bottom: 4vh;
-}
-
-.first_block {
-    background-image: url(../img/blog-image1.jpg);
-}
-
-.second_block {
-    background-image: url(../img/blog-image2.jpg);
-}
-
-.third_block {
-    background-image: url(../img/blog-image3.jpg);
-}
-
-.fourth_block {
-    background-image: url(../img/blog-image4.jpg);
-}
-
-.fifth_block {
-    background-image: url(../img/blog-image5.jpg);
 }
 
 .autor {
