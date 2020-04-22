@@ -10,9 +10,6 @@ if (!sum || sum < 0) {
     } else {
         sum = Math.round(sum * MaxPersent) / MaxPersent;
         x = Math.round(sum * persent) / MaxPersent;
-        alert('check number: ' + sum + '\n' +
-            'tip: ' + persent + '%' + '\n' +
-            'tip amount: ' + x + '\n' +
-            'total summ: ' + `${sum + x}` + ' ye');
+        alert(`check number: ${sum}\ntip: ${persent} %\ntip amount: ${x}\ntotal summ:  ${sum + x}  ye`);
     }
 }
