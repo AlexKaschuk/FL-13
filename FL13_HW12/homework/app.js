@@ -156,8 +156,7 @@ canselButton.onclick = () => {
     if (confirm('Discard changes?”')) {
         bookPrew.classList.add('hidden');
         formatBooks.classList.add('hidden');
-        location.search = '';
-        location.hash = '';
+        location.href = 'index.html';
 
     }
 }
@@ -180,7 +179,7 @@ function save() {
             });
         }
         formatBooks.classList.add('hidden');
-        location.hash = '';
+        location.href = 'index.html';
     } else {
         alert('false img URL');
     }
