@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book_list {
+    margin-top: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    width: 48%;
+    height: 90vh;
+    background-color: rgb(219, 247, 215);
+    border: 1px solid #000;
+    overflow: auto;
+    padding-top: 38px;
+}
+
+.book_review {
+    margin-top: 30px;
+    width: 48%;
+    height: 90vh;
+    background-color: rgb(219, 247, 215);
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+.book {
+    width: 80%;
+    margin: 25px auto;
+    border: 1px solid #000;
+    background-color: beige;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.book_title {
+    margin: auto;
+    font-size: 22px;
+}
+
+.autor_name {
+    margin-top: 5px;
+}
+
+.save_button,
+.cansel_button,
+.add_button,
+.edit_button {
+    width: 120px;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.add_button {
+    margin-left: 40%;
+}
+
+.cansel_button {
+    margin-left: 45%;
+    margin-right: 2%;
+}
+
+.book_rew {
+    width: 80%;
+    height: 80vh;
+    margin: 40px 45px;
+    padding: 15px;
+    background-color: rgb(245, 247, 220);
+}
+
+form {
+    margin: 15px 50px;
+}
+
+form input {
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+form p {
+    margin: 0;
+}
+
+.book_plot {
+    overflow: auto;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
