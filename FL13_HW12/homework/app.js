@@ -76,7 +76,6 @@ booksList.onclick = getId;
 function getId(e) {
     e.preventDefault();
     if (e.target.className === 'add_button') {
-        e.preventDefault();
         window.history.pushState('', '', '?#add');
         addBook();
         getLocation(e);
@@ -84,7 +83,6 @@ function getId(e) {
         e.target.className === 'book' &&
         e.target.className !== 'add_button') {
         myBookID = e.target.getAttribute('id');
-        e.preventDefault();
         window.history.pushState('', '', `?id=${myBookID}#preview`);
         previweBook(myBookID);
         getLocation(e);
@@ -92,14 +90,12 @@ function getId(e) {
         e.target.className !== 'edit_button' &&
         e.target.parentElement.getAttribute('id') !== 'root') {
         myBookID = e.target.parentElement.getAttribute('id');
-        e.preventDefault();
         window.history.pushState('', '', `?id=${myBookID}#preview`);
         previweBook(myBookID);
         getLocation(e);
     } else if (e.target.className === 'edit_button') {
         editButton = e.target;
         myBookID = e.target.parentElement.getAttribute('id');
-        e.preventDefault();
         window.history.pushState('', '', `?id=${myBookID}#edit`);
         editBook(myBookID);
         getLocation(e);
