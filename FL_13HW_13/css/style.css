@@ -1,0 +1,25 @@
+.header_nav-logo {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-stretch: ultra-condensed;
+}
+
+.header_nav-link {
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-stretch: ultra-condensed;
+}
+
+.header_hero-text h2 {
+    font-size: 3rem;
+}
+
+.header_hero-text p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.header_hero-btn {
+    font-size: 1.3rem;
+}
