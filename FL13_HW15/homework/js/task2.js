@@ -64,7 +64,8 @@ Vehicle.prototype.stop = function() {
                 console.log(this.speed);
                 if (!this.speed) {
                     clearInterval(index2);
-                    console.log(`${Vehicle.name} is stopped. Maximum speed during the drive was ${this.topSpeed} `);
+                    console.log(`${Vehicle.name} is stopped. Maximum speed during 
+                    the drive was ${this.topSpeed} `);
                 }
             }, TIMERSTOP);
         }
