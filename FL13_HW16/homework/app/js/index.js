@@ -28,10 +28,6 @@ const load = document.createElement('p');
 load.setAttribute('id', 'load');
 load.innerHTML = 'Loading....';
 appContainer.appendChild(load);
-
-
-
-
 let usersForm = '';
 let data;
 const getData = () => {
