@@ -1,0 +1,33 @@
+/* Your code goes here */
+
+input {
+    cursor: pointer;
+    outline: none;
+}
+
+#name_input,
+#fullName_input {
+    margin-right: 2px;
+    margin-left: 3px;
+}
+
+.users {
+    margin-top: 15px;
+    display: block;
+}
+
+.user_id {
+    margin: 5px 15px;
+    width: 100px;
+    border: none;
+}
+
+.update_btn,
+.delete_btn {
+    cursor: pointer;
+    padding: 1px 25px;
+}
+
+#load {
+    display: none;
+}
