@@ -1,8 +1,6 @@
 const baseUrl = 'http://localhost:3000';
 const appContainer = document.getElementById('app-container');
 
-// Your code goes here
-
 const GETCODE = 200;
 const POSTCODE = 201;
 const PUTCODE = 204;
