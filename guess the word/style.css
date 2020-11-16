@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(233, 253, 179);
+}
+
+#root,
+#guessing {
+    margin: 50px auto;
+    padding: 30px 15px;
+    border: 1px solid #000;
+    width: 500px;
+    background-color: rgb(170, 243, 221);
+}
+
+.form_title,
+form {
+    text-align: center;
+}
+
+input {
+    width: 60%;
+}
+
+.hidden_word {
+    text-align: center;
+    font-size: 31px;
+}
