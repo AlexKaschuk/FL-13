@@ -13,24 +13,18 @@ const guessing = document.getElementById('guessing');
 let form = document.createElement('form'),
     label = document.createElement('label'),
     input = document.createElement('input'),
-    button = document.createElement('button');
-button.innerHTML = "submit";
-let Guessing_word = document.createElement('p');
-Guessing_word.classList.add("hidden_word");
-
-let word = words[Math.floor(Math.random() * words.length)],
+    button = document.createElement('button'),
+    Guessing_word = document.createElement('p'),
+    word = words[Math.floor(Math.random() * words.length)],
     attempt = word.length * 2,
     remainingLetters = word.length,
     answerArray = word.split("").map(x => x = "_");
-
-let CreateForm = (root) => {
-    label.innerHTML = "enter the letter and push the button";
-    form.appendChild(label).appendChild(input);
-    form.appendChild(button);
-    root.appendChild(form);
-}
-
-CreateForm(root);
+label.innerHTML = "enter the letter and push the button";
+form.appendChild(label).appendChild(input);
+form.appendChild(button);
+root.appendChild(form);
+button.innerHTML = "submit";
+Guessing_word.classList.add("hidden_word");
 
 let ShowHidenWord = (root, answerArray) => {
     Guessing_word.innerHTML = "";
@@ -72,7 +66,6 @@ let showgame = (e) => {
             location.reload();
         }
     }
-
 }
 
 button.onclick = showgame;
